@@ -1,13 +1,77 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #171616;
+}
+.navbar-brand{
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-color {
+  background-color: #0c0d0c;
 }
+
+.highlight-color {
+  background-color: #262626
+}
+
+.card-login {
+  width: 18rem;
+  height: 40vh;
+  background: #0c0d0c;
+}
+
+.card-spotlight {
+
+  
+  background: #0c0d0c;
+}
+
+.card-borders {
+  border-color: #575868;
+}
+
+.card-text-height {
+  height: 200px;
+}
+
+.card {
+  box-shadow: 0 0px 20px 0 rgba(16, 6, 31, 1);
+}
+
+#student:hover {
+  box-shadow: 0 0px 30px rgba(0, 84, 253, 0.9);
+}
+
+#employee:hover {
+  box-shadow: 0 0px 30px rgba(255, 193, 7, 0.9);
+
+}
+
+#parent:hover {
+  box-shadow: 0 0px 30px rgba(4, 116, 0, 0.9);
+}
+
+#alumini:hover {
+  box-shadow: 0 0px 30px rgba(0, 228, 253, 0.9);
+}
+
+.shadow-bottom {
+  box-shadow: 0 0px 100px 0 rgba(80, 39, 129, 1);
+}
+.custom-table{
+  width: 100%;
+  background: transparent ;
+}
+table tr{
+  height: 50px ;
+  border-bottom: 1px solid #575868; 
+}
+table tr:first-child {
+  border-top: 1px solid #ddd; /* Adjust color and thickness as needed */
+}
+table tr:last-child {
+  border: 0px solid #ddd; /* Adjust color and thickness as needed */
+}
+tr th,
+tr td {
+    padding: 10px;}
