@@ -1,7 +1,8 @@
 body {
   background-color: #171616;
 }
-.navbar-brand{
+
+.navbar-brand {
   font-family: 'Times New Roman', Times, serif;
 
 }
@@ -15,14 +16,12 @@ body {
 }
 
 .card-login {
-  
+
   height: 40vh;
   background: #0c0d0c;
 }
 
 .card-spotlight {
-
-  
   background: #0c0d0c;
 }
 
@@ -34,44 +33,102 @@ body {
   height: 200px;
 }
 
+.card-registered-courses {
+  height: 200px;
+  background: #0c0d0c;
+}
+
 .card {
-  box-shadow: 0 0px 20px 0 rgba(16, 6, 31, 1);
+  box-shadow: 0 0px 15px 0 rgb(16, 6, 31);
 }
 
 #student:hover {
-  box-shadow: 0 0px 30px rgba(0, 84, 253, 0.9);
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 20px rgba(0, 84, 253, 0.9);
 }
 
+
 #employee:hover {
-  box-shadow: 0 0px 30px rgba(255, 193, 7, 0.9);
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 20px rgba(255, 193, 7, 0.9);
 
 }
 
 #parent:hover {
-  box-shadow: 0 0px 30px rgba(4, 116, 0, 0.9);
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 20px rgba(4, 116, 0, 0.9);
 }
 
 #alumini:hover {
-  box-shadow: 0 0px 30px rgba(0, 228, 253, 0.9);
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 20px rgba(0, 228, 253, 0.9);
+}
+
+#student:not(:hover),
+#employee:not(:hover),
+#parent:not(:hover),
+#alumini:not(:hover) {
+  transition: ease-in-out 500ms;
+  box-shadow: 0 0px 15px 0 rgba(16, 6, 31, 1);
+  
 }
 
 .shadow-bottom {
   box-shadow: 0 0px 100px 0 rgba(80, 39, 129, 1);
 }
-.custom-table{
+
+.custom-table {
   width: 100%;
-  background: transparent ;
+  background: transparent;
 }
-table tr{
-  height: 50px ;
-  border-bottom: 1px solid #575868; 
+
+table tr {
+  height: 50px;
+  border-bottom: 1px solid #575868;
 }
+
 table tr:first-child {
-  border-top: 1px solid #ddd; /* Adjust color and thickness as needed */
+  border-top: 1px solid #ddd;
+  
 }
+
 table tr:last-child {
-  border: 0px solid #ddd; /* Adjust color and thickness as needed */
+  border: 0px solid #ddd;
+  
 }
+
 tr th,
 tr td {
-    padding: 10px;}
+  padding: 10px;
+}
+
+.span-width {
+  padding: auto;
+  width: 50px;
+}
+.card-scroll{
+  height: 40vh;
+  overflow-y: auto;
+}
+.card-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card-scroll::-webkit-scrollbar-track {
+  background-color: #343541;
+  border-radius: 100px;
+}
+
+.card-scroll::-webkit-scrollbar-thumb {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+.sidebar-shadow{
+  box-shadow: 0 0px 100px 0 rgba(80, 39, 129, 1);
+
+}
+.card-event{
+  background-color: rgb(41, 41, 46);
+  border: 0;
+
+}

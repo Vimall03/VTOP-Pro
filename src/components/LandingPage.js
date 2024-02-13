@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 export default function LandingPage(props) {
     const navigate = useNavigate()
@@ -33,6 +34,8 @@ export default function LandingPage(props) {
     }
     return (
         <div>
+            <Navbar  />
+
             <div className="container">
                 <div className=' p-5'>
                     <h1 className='fw-bolder text-white text-center'>VTOP: Elevating Excellence</h1>
@@ -93,30 +96,30 @@ export default function LandingPage(props) {
                                     <h5 className="card-title">Vellore Institute of Technology (VIT), India - Spotlight</h5>
                                     <h6 className="card-subtitle mb-2 text-secondary-emphasis">Spotlight: Discover the latest achievements, events, and stories shaping our community at VTOP.</h6>
                                     <div className="card-text mt-3 ">
-                                        <table class="custom-table ">
+                                        <table className="custom-table ">
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row"><i class="fa-solid fa-hashtag"></i></th>
+                                                    <th scope="row"><i className="fa-solid fa-hashtag"></i></th>
                                                     <td>
                                                         Ranked among the top 601-700 Universities of the world and one among the top 3 Institutions in India (Shanghai ARWU Ranking 2022)</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><i class="fa-solid fa-hashtag"></i></th>
+                                                    <th scope="row"><i className="fa-solid fa-hashtag"></i></th>
                                                     <td>
                                                         The 8th best University, the 11th best research institution and the 11th best engineering institution in India (NIRF Ranking, Govt. of India 2023)</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><i class="fa-solid fa-hashtag"></i></th>
-                                                    <td colspan="2">Engineering and Technology subject areas of VIT are the 240th best in the World and the 9th best in India, eight subjects of VIT are within the top 500 in the world (as per QS World University Rankings by Subject 2023)</td>
+                                                    <th scope="row"><i className="fa-solid fa-hashtag"></i></th>
+                                                    <td colSpan="2">Engineering and Technology subject areas of VIT are the 240th best in the World and the 9th best in India, eight subjects of VIT are within the top 500 in the world (as per QS World University Rankings by Subject 2023)</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><i class="fa-solid fa-hashtag"></i></th>
+                                                    <th scope="row"><i className="fa-solid fa-hashtag"></i></th>
                                                     <td>
                                                         NAAC Accreditation with A++ grade (3.66 out of 4)</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><i class="fa-solid fa-hashtag"></i></th>
-                                                    <td colspan="2">
+                                                    <th scope="row"><i className="fa-solid fa-hashtag"></i></th>
+                                                    <td colSpan="2">
                                                         Ranked within the top 200 Universities in Asia (QS - Asia University Rankings 2023)</td>
                                                 </tr>
                                             </tbody>
