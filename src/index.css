@@ -151,9 +151,35 @@ tr td {
   border-radius: 50px;
   box-shadow: 0 0px 15px 0 rgb(255, 255, 255);
 }
+.cgpa {
+  font-size: 108px;
+}
+.main-content {
+  overflow-y: auto;
+}
 
 
+/* @media only screen and (max-width: 767px) {
+  .sidebarScroll {
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    height: 100vh;
+  }
+} */
 
+@media only screen and (min-width: 768px) {
+
+  .sidebarScroll {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+  }
+}
+/* .sidebarScroll {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+} */
 
 .fira-sans-thin {
   font-family: "Fira Sans", sans-serif;
@@ -167,7 +193,7 @@ tr td {
   font-style: normal;
 }
 
-.work-sans-semibold{
+.work-sans-semibold {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
