@@ -1,10 +1,15 @@
 body {
   background-color: #171616;
 }
+* {
+  cursor: default;
+}
+.fa-plus-circle {
+  cursor: pointer;
+}
 
 .navbar-brand {
-  font-family: 'Times New Roman', Times, serif;
-
+  font-family: "Times New Roman", Times, serif;
 }
 
 .navbar-color {
@@ -12,11 +17,10 @@ body {
 }
 
 .highlight-color {
-  background-color: #262626
+  background-color: #262626;
 }
 
 .card-login {
-
   height: 40vh;
   background: #0c0d0c;
 }
@@ -47,11 +51,9 @@ body {
   box-shadow: 0 0px 20px rgba(0, 84, 253, 0.9);
 }
 
-
 #employee:hover {
   transition: ease-in-out 500ms;
   box-shadow: 0 0px 20px rgba(255, 193, 7, 0.9);
-
 }
 
 #parent:hover {
@@ -70,7 +72,6 @@ body {
 #alumini:not(:hover) {
   transition: ease-in-out 500ms;
   box-shadow: 0 0px 15px 0 rgba(16, 6, 31, 1);
-  
 }
 
 .shadow-bottom {
@@ -89,12 +90,10 @@ table tr {
 
 table tr:first-child {
   border-top: 1px solid #ddd;
-  
 }
 
 table tr:last-child {
   border: 0px solid #ddd;
-  
 }
 
 tr th,
@@ -106,7 +105,7 @@ tr td {
   padding: auto;
   width: 50px;
 }
-.card-scroll{
+.card-scroll {
   height: 40vh;
   overflow-y: auto;
 }
@@ -123,12 +122,150 @@ tr td {
   background-color: #e4e4e4;
   border-radius: 100px;
 }
-.sidebar-shadow{
+.sidebar-shadow {
   box-shadow: 0 0px 100px 0 rgba(80, 39, 129, 1);
-
 }
-.card-event{
-  background-color: rgb(41, 41, 46);
+.card-event {
+  background-color: #473f52;
   border: 0;
+}
 
+.modal-bg {
+  background-color: #10061ff1;
+  border-color: #e4e4e4;
+  box-shadow: 0 0px 30px 0 rgba(16, 6, 31, 1);
+}
+.fa-plus-circle {
+  color: white;
+  transition: 200ms;
+}
+.fa-plus-circle:hover {
+  border-radius: 50px;
+  box-shadow: 0 0px 15px 0 rgb(255, 255, 255);
+}
+.btn-css {
+  color: white;
+  transition: 200ms;
+}
+.btn-css:hover {
+  border-radius: 50px;
+  box-shadow: 0 0px 15px 0 rgb(255, 255, 255);
+}
+
+
+
+
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.work-sans-semibold{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.card-title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.card-subtitle {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }

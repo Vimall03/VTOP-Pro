@@ -1,8 +1,18 @@
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react'
 import CarouselWithCards from './CarouselWithCards'
+import Modal from './Modal';
 
 export default function Home() {
+    const [showModalSchedule, setShowModalSchedule] = useState(false);
+    const [showModalMeet, setShowModalMeet] = useState(false);
+    const handleModalSchedule = () => {
+        setShowModalSchedule(true)
+        document.body.classList.add('background-overflow-hidden');
+    }
+    const handleModalMeet = () => {
+        setShowModalMeet(true)
+        document.body.classList.add('background-overflow-hidden')
+    }
 
     return (
         <div className="container " style={{ height: '100vh' }}>
@@ -55,8 +65,8 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="col-md-4 pt-0   p-3" >
-                    <div id='student' style={{ overflowY: 'auto' }} className="card card-scroll card-borders card-login">
-                        <div className="card-body card-text-height text-light">
+                    <div id='' style={{ overflowY: 'auto' }} className="card card-scroll card-borders card-login">
+                        <div onClick={handleModalSchedule} className="card-body card-text-height text-light">
                             <h5 className="card-title">Upcoming classes  <i className="fa-solid fa-calendar-days"></i></h5>
                             <div className='pb-2'>
                                 <h6 className="card-subtitle mb-2 text-light-emphasis">Today's Classes</h6>
@@ -111,7 +121,12 @@ export default function Home() {
                             <h5 className="card-title">Meet Faculty  <i className="fa-solid fa-chalkboard-user"></i></h5>
                             <h6 className="card-subtitle text-secondary-emphasis">Schedule a meet with your Faculty</h6>
                             <div className="d-flex justify-content-evenly p-2 mt-2 card-event card  align-items-center">
-                                <p className="card-text text-white text-center fs-3" style={{ marginBottom: '3px' }}><i className="fa fa-plus-circle" aria-hidden="true"></i></p>
+                                <p className="card-text text-white text-center fs-3" style={{ marginBottom: '3px' }}>
+                                    <button onClick={handleModalMeet} className='btn border-0 p-0 bg-transparent '>
+                                        <i className="fa fa-plus-circle fs-3  " aria-hidden="true">
+                                        </i>
+                                    </button>
+                                </p>
                                 <p className="card-text text-white fw-semibold  text-center">Schedule</p>
                             </div>
                             <hr />
@@ -153,16 +168,17 @@ export default function Home() {
                     <h1 className='text-white p-3 fs-3 fw-bold'>Registered Courses</h1>
                     <div className="d-flex justify-content-between px-5 align-items-center">
                         <button className=" position-relative carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <i className="fs-3 fa-solid fa-circle-left"></i>
+                            <i className="fs-3 btn-css fa-solid fa-circle-left"></i>
                         </button>
                         <button className="carousel-control-next position-relative" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <i className="fs-3 fa-solid fa-circle-right"></i>
+                            <i className="fs-3 fa-solid btn-css fa-circle-right"></i>
                         </button>
                     </div>
 
                 </div>
 
                 <CarouselWithCards />
+                <Modal showMeet={showModalMeet} setShowModalMeet={setShowModalMeet} showSchedule={showModalSchedule} setShowModalSchedule={setShowModalSchedule} />
             </div>
         </div>
 

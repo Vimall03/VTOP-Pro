@@ -38,7 +38,7 @@ export default function LandingPage(props) {
 
             <div className="container">
                 <div className=' p-5'>
-                    <h1 className='fw-bolder text-white text-center'>VTOP: Elevating Excellence</h1>
+                    <h1 className='fw-bolder text-white text-center work-sans-semibold'>VTOP: Elevating Excellence</h1>
                 </div>
                 <div className="container">
                     <div className="row">
@@ -46,7 +46,7 @@ export default function LandingPage(props) {
                             <div id='student' className="card card-borders card-login">
                                 <div className="card-body card-text-height text-light">
                                     <h5 className="card-title">Student</h5>
-                                    <h6 className="card-subtitle mb-2 text-secondary-emphasis">Empowering Students for Success</h6>
+                                    <h6 className="card-subtitle mb-2 text-dark-emphasis ">Empowering Students for Success</h6>
                                     <p className="card-text ">Access your academic journey with ease. Log in here to explore courses, grades, schedules, and connect with peers and faculty.</p>
                                 </div>
                                 <div className="card-body text-light">
@@ -58,7 +58,7 @@ export default function LandingPage(props) {
                             <div id='employee' className="card card-borders card-login">
                                 <div className="card-body card-text-height text-light">
                                     <h5 className="card-title">Employee</h5>
-                                    <h6 className="card-subtitle mb-2 text-secondary-emphasis">Efficiency in Professional Endeavors</h6>
+                                    <h6 className="card-subtitle mb-2 text-dark-emphasis">Efficiency in Professional Endeavors</h6>
                                     <p className="card-text ">Unlock your professional tools and resources. Log in here to manage tasks, access administrative features, and collaborate with colleagues.</p>
                                 </div>
                                 <div className="card-body text-light">
@@ -70,7 +70,7 @@ export default function LandingPage(props) {
                             <div id='parent' className="card card-borders card-login">
                                 <div className="card-body card-text-height text-light">
                                     <h5 className="card-title">Parent</h5>
-                                    <h6 className="card-subtitle mb-2 text-secondary-emphasis">Partnering for Your Child's Success</h6>
+                                    <h6 className="card-subtitle mb-2 text-dark-emphasis">Partnering for Your Child's Success</h6>
                                     <p className="card-text ">Stay connected with your child's education. Log in here to view progress reports, communicate with teachers, and stay informed about school events.</p>
                                 </div>
                                 <div className="card-body text-light">
@@ -82,7 +82,7 @@ export default function LandingPage(props) {
                             <div id='alumini' className="card card-borders card-login">
                                 <div className="card-body card-text-height text-light">
                                     <h5 className="card-title ">Alumini</h5>
-                                    <h6 className="card-subtitle mb-2 text-secondary-emphasis ">Preserving Memories, Building Connections</h6>
+                                    <h6 className="card-subtitle mb-2 text-dark-emphasis ">Preserving Memories, Building Connections</h6>
                                     <p className="card-text ">Reconnect with your alma mater. Log in here to access alumni benefits, stay updated on reunions and events, and engage with fellow graduates.</p>
                                 </div>
                                 <div className="card-body text-light">
@@ -94,7 +94,7 @@ export default function LandingPage(props) {
                             <div className="mt-4 card card-borders card-spotlight">
                                 <div className="card-body  text-light">
                                     <h5 className="card-title">Vellore Institute of Technology (VIT), India - Spotlight</h5>
-                                    <h6 className="card-subtitle mb-2 text-secondary-emphasis">Spotlight: Discover the latest achievements, events, and stories shaping our community at VTOP.</h6>
+                                    <h6 className="card-subtitle mb-2 text-dark-emphasis">Spotlight: Discover the latest achievements, events, and stories shaping our community at VTOP.</h6>
                                     <div className="card-text mt-3 ">
                                         <table className="custom-table ">
                                             <tbody>
