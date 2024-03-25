@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../context/UserContext';
 
 export default function GradeHistory() {
 
@@ -508,7 +509,7 @@ export default function GradeHistory() {
             "Detail View": ""
         }
     ]
-
+    const { toggleMode } = useContext(UserContext)
     const totalCreditsEarned = data.reduce((total, course) => total + course.Credits, 0);
 
     // Count the number of each grade
@@ -528,13 +529,13 @@ export default function GradeHistory() {
     });
     return (
         <div className='container' >
-            <h1 className='text-white p-3 fs-2 fw-bold'>Grade History</h1>
-            <div className="mt-2 card card-borders card-spotlight">
-                <div className="card-body  text-light">
+            <h1 className={`${toggleMode == 'dark' ? 'text-white' : 'text-dark'} p-3 fs-2 fw-bold`}>Grade History</h1>
+            <div className={`mt-2 card ${toggleMode == 'dark' ? 'card-borders card-spotlight' : 'card-borders-light card-spotlight-light' }`}>
+                <div className={`card-body  ${toggleMode == 'dark'?'text-light':'text-dark'}`}>
                     <h5 className="card-title ">CGPA Details</h5>
                     <h6 className="card-subtitle mb-2 text-dark-emphasis">AI-driven system analyzing student grade history to recommend focused subject areas for academic improvement.</h6>
                     <div className="card-text mt-3 card-scroll-x">
-                        <table className="custom-table">
+                        <table className="custom-table ">
                             <tbody>
                                 <table className="custom-table" cellPadding="10">
                                     <tr>
@@ -569,8 +570,8 @@ export default function GradeHistory() {
                     </div>
                 </div>
             </div>
-            <div className="mt-2 card card-borders card-spotlight">
-                <div className="card-body  text-light">
+            <div className={`mt-2 card ${toggleMode == 'dark' ? 'card-borders card-spotlight' : 'card-borders-light card-spotlight-light' }`}>
+                <div className={`card-body  ${toggleMode == 'dark'?'text-light':'text-dark'}`}>
                     <h5 className="card-title">Vellore Institute of Technology (VIT), India - Effective Grades</h5>
                     <h6 className="card-subtitle mb-2 text-dark-emphasis">Spotlight: Discover the latest achievements, events, and stories shaping our community at VTOP.</h6>
                     <div className="card-text mt-3 card-scroll-x">
@@ -607,7 +608,7 @@ export default function GradeHistory() {
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }

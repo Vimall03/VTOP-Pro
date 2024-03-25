@@ -129,7 +129,7 @@ export default function Sidebar(props) {
                     <div className="dropdown">
                         <a href="/" className={`d-flex align-items-center ${toggleMode == 'dark' ? 'text-white' : 'text-dark' } text-decoration-none dropdown-toggle`} data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="https://github.com/mdo.png" alt="" width={32} height={32} className="rounded-circle me-2" />
-                            <strong>21BCE10949</strong>
+                            <strong>21BCE10###</strong>
                         </a>
                         <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
                             <li><a className="dropdown-item" href="/">Settings</a></li>

@@ -7,7 +7,7 @@ body {
   transition: ease-in-out 500ms;
 }
 .body-light{
-  background-color: #ffffff;
+  background-color: #dce5e6;
   transition: ease-in-out 500ms;
 }
 * {
@@ -49,7 +49,7 @@ body {
 
 
 .navbar-color-light {
-  background-color: #ffffff;
+  background-color: #dce5e6;
   transition: ease-in-out 500ms;
 }
 .highlight-color-light {
@@ -57,16 +57,16 @@ body {
   transition: ease-in-out 500ms;
 }
 .card-login-light {
-  background: #f6f6f6;
+  background: #dce5e6;
   transition: ease-in-out 500ms;
 }
 .card-spotlight-light {
-  background: #ffffff;
+  background: #dce5e6;
   transition: ease-in-out 500ms;
 }
 .card-registered-courses-light {
   height: 200px;
-  background: #eafbea;
+  background: #dce5e6;
   transition: ease-in-out 500ms;
 }
 .card-borders-light {
@@ -112,9 +112,9 @@ body {
   box-shadow: 0 0px 15px 0 rgba(16, 6, 31, 1);
 }
 
-.shadow-bottom {
-  box-shadow: 0 0px 100px 0 rgba(80, 39, 129, 1);
-}
+/* .shadow-bottom {
+  box-shadow: 0 0px 0px 0 rgba(80, 39, 129, 1);
+} */
 
 .custom-table {
   width: 100%;
