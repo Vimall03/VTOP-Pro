@@ -4,15 +4,15 @@ import { UserContext } from '../context/UserContext';
 
 export default function Navbar() {
     const { toggleMode, setToggleMode } = useContext(UserContext);
-    const handleMode =()=>{
-        if(toggleMode == 'dark'){
+    const handleMode = () => {
+        if (toggleMode == 'dark') {
             setToggleMode('light');
             document.body.classList.add('body-light');
             document.body.classList.remove('body-dark');
         }
         else {
             setToggleMode('dark');
-            document.body.classList.add('body-dark'); 
+            document.body.classList.add('body-dark');
             document.body.classList.remove('body-light');
         }
     }
@@ -41,7 +41,7 @@ export default function Navbar() {
                             </li>
                         </ul>
                     </div>
-                    <div className='fs-5'>
+                    <div className='mx-0 fs-5'>
                         {
                             toggleMode == 'light' ?
                                 <div className='text-light' onClick={handleMode}>
@@ -51,7 +51,6 @@ export default function Navbar() {
                                 <div className='text-light' onClick={handleMode}>
                                     <i className="fa-solid fa-moon"></i>
                                 </div>
-
                         }
                     </div>
 

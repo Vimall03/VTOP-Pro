@@ -142,7 +142,7 @@ export default function Sidebar(props) {
             </div>
 
             {/* Show collapse button only on mobile */}
-            <div className="flex-shrink-0 p-2 d-md-none">
+            <div className="flex-shrink-0  sticky-top p-2 d-md-none">
                 <button className="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded={isExpanded} aria-controls="collapseWidthExample" onClick={toggleSidebar}>
                     <i className={`fa-solid ${isExpanded ? 'fa-xmark' : 'fa-bars'}`} aria-hidden="true"></i>
                 </button>

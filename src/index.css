@@ -13,6 +13,8 @@ body {
 * {
   cursor: default;
 }
+
+
 .fa-plus-circle {
   cursor: pointer;
 }

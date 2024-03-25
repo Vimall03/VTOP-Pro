@@ -14,7 +14,7 @@ function App() {
     'desc': 'Welcome back, Student! Please enter your credentials to access your account.',
   });
   //loginType Describes who loggs in, example Student, employee, etc.
-  const [toggleMode, setToggleMode] = useState('dark')
+  
   document.body.classList.add('body-dark');
   return (
 
