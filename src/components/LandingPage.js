@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
-
+import { UserContext } from '../context/UserContext';
 export default function LandingPage(props) {
+
+    const { toggleMode} = useContext(UserContext);
     const navigate = useNavigate()
     const handelStudentLogin=()=>{
         props.setLoginType({
@@ -34,17 +36,17 @@ export default function LandingPage(props) {
     }
     return (
         <div>
-            <Navbar  />
+            <Navbar />
 
             <div className="container">
                 <div className=' p-5'>
-                    <h1 className='fw-bolder text-white text-center work-sans-semibold'>VTOP: Elevating Excellence</h1>
+                    <h1 className={`fw-bolder text-center work-sans-semibold ${toggleMode == 'dark'?  'text-white' : 'text-dark'}`}>VTOP: Elevating Excellence</h1>
                 </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 p-3">
-                            <div id='student' className="card card-borders card-login">
-                                <div className="card-body card-text-height text-light">
+                            <div id='student' className={`card  ${toggleMode == 'dark'? 'card-login card-borders' : 'card-login-light card-borders-light' }`}>
+                                <div className={`card-body card-text-height ${toggleMode == 'dark'? 'text-light' : 'text-dark' } `}>
                                     <h5 className="card-title">Student</h5>
                                     <h6 className="card-subtitle mb-2 text-dark-emphasis ">Empowering Students for Success</h6>
                                     <p className="card-text ">Access your academic journey with ease. Log in here to explore courses, grades, schedules, and connect with peers and faculty.</p>
@@ -55,8 +57,8 @@ export default function LandingPage(props) {
                             </div>
                         </div>
                         <div className="col-md-3 p-3">
-                            <div id='employee' className="card card-borders card-login">
-                                <div className="card-body card-text-height text-light">
+                            <div id='employee' className={`card  ${toggleMode == 'dark'? 'card-login card-borders' : 'card-login-light card-borders-light' }`}>
+                                <div className={`card-body card-text-height ${toggleMode == 'dark'? 'text-light' : 'text-dark' } `}>
                                     <h5 className="card-title">Employee</h5>
                                     <h6 className="card-subtitle mb-2 text-dark-emphasis">Efficiency in Professional Endeavors</h6>
                                     <p className="card-text ">Unlock your professional tools and resources. Log in here to manage tasks, access administrative features, and collaborate with colleagues.</p>
@@ -67,8 +69,8 @@ export default function LandingPage(props) {
                             </div>
                         </div>
                         <div className="col-md-3 p-3">
-                            <div id='parent' className="card card-borders card-login">
-                                <div className="card-body card-text-height text-light">
+                            <div id='parent' className={`card  ${toggleMode == 'dark'? 'card-login card-borders' : 'card-login-light card-borders-light' }`}>
+                                <div className={`card-body card-text-height ${toggleMode == 'dark'? 'text-light' : 'text-dark' } `}>
                                     <h5 className="card-title">Parent</h5>
                                     <h6 className="card-subtitle mb-2 text-dark-emphasis">Partnering for Your Child's Success</h6>
                                     <p className="card-text ">Stay connected with your child's education. Log in here to view progress reports, communicate with teachers, and stay informed about school events.</p>
@@ -79,8 +81,8 @@ export default function LandingPage(props) {
                             </div>
                         </div>
                         <div className="col-md-3 p-3">
-                            <div id='alumini' className="card card-borders card-login">
-                                <div className="card-body card-text-height text-light">
+                            <div id='alumini' className={`card  ${toggleMode == 'dark'? 'card-login card-borders' : 'card-login-light card-borders-light' }`}>
+                                <div className={`card-body card-text-height ${toggleMode == 'dark'? 'text-light' : 'text-dark' } `}>
                                     <h5 className="card-title ">Alumini</h5>
                                     <h6 className="card-subtitle mb-2 text-dark-emphasis ">Preserving Memories, Building Connections</h6>
                                     <p className="card-text ">Reconnect with your alma mater. Log in here to access alumni benefits, stay updated on reunions and events, and engage with fellow graduates.</p>
@@ -91,8 +93,8 @@ export default function LandingPage(props) {
                             </div>
                         </div>
                         <div className="col-md-12 p-3">
-                            <div className="mt-4 card card-borders card-spotlight">
-                                <div className="card-body  text-light">
+                            <div className={`mt-4 card card-borders ${toggleMode == 'dark'? 'card-spotlight' : 'card-spotlight-light'}`}>
+                                <div className={`card-body  ${toggleMode == 'dark'? 'text-light' : 'text-dark' }`}>
                                     <h5 className="card-title">Vellore Institute of Technology (VIT), India - Spotlight</h5>
                                     <h6 className="card-subtitle mb-2 text-dark-emphasis">Spotlight: Discover the latest achievements, events, and stories shaping our community at VTOP.</h6>
                                     <div className="card-text mt-3 ">

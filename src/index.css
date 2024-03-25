@@ -1,6 +1,15 @@
 body {
   background-color: #171616;
 }
+
+.body-dark{
+  background-color: #171616;
+  transition: ease-in-out 500ms;
+}
+.body-light{
+  background-color: #ffffff;
+  transition: ease-in-out 500ms;
+}
 * {
   cursor: default;
 }
@@ -14,33 +23,62 @@ body {
 
 .navbar-color {
   background-color: #0c0d0c;
+  transition: ease-in-out 500ms;
 }
-
 .highlight-color {
   background-color: #262626;
+  transition: ease-in-out 500ms;
 }
-
 .card-login {
-  height: 40vh;
   background: #0c0d0c;
+  transition: ease-in-out 500ms;
 }
-
 .card-spotlight {
   background: #0c0d0c;
+  transition: ease-in-out 500ms;
 }
-
+.card-registered-courses {
+  height: 200px;
+  background: #0c0d0c;
+  transition: ease-in-out 500ms;
+}
 .card-borders {
   border-color: #575868;
+  transition: ease-in-out 500ms;
 }
+
+
+.navbar-color-light {
+  background-color: #ffffff;
+  transition: ease-in-out 500ms;
+}
+.highlight-color-light {
+  background-color: #262626;
+  transition: ease-in-out 500ms;
+}
+.card-login-light {
+  background: #f6f6f6;
+  transition: ease-in-out 500ms;
+}
+.card-spotlight-light {
+  background: #ffffff;
+  transition: ease-in-out 500ms;
+}
+.card-registered-courses-light {
+  height: 200px;
+  background: #eafbea;
+  transition: ease-in-out 500ms;
+}
+.card-borders-light {
+  border-color: #000000;
+  transition: ease-in-out 500ms;
+}
+
 
 .card-text-height {
   height: 200px;
 }
 
-.card-registered-courses {
-  height: 200px;
-  background: #0c0d0c;
-}
 
 .card {
   box-shadow: 0 0px 15px 0 rgb(16, 6, 31);
@@ -120,6 +158,25 @@ tr td {
 
 .card-scroll::-webkit-scrollbar-thumb {
   background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+
+.card-scroll-light {
+  height: 40vh;
+  overflow-y: auto;
+}
+.card-scroll-light::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card-scroll-light::-webkit-scrollbar-track {
+  background-color: #656773;
+  border-radius: 100px;
+}
+
+.card-scroll-light::-webkit-scrollbar-thumb {
+  background-color: #000000;
   border-radius: 100px;
 }
 
@@ -326,3 +383,4 @@ tr td {
 .custom-table td {
   padding: 10px;
 }
+
