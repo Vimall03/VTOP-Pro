@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import Attendance from './Graphs/Attendance'
-import SubAttendance from './Graphs/SubAttendance'
-import CGPA from './Graphs/CGPA'
+import Attendance from '../components/Graphs/Attendance'
+import SubAttendance from '../components/Graphs/SubAttendance'
+import CGPA from '../components/Graphs/CGPA'
 import { UserContext } from '../context/UserContext'
 // import Attendance
 

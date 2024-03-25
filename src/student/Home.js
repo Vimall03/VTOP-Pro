@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
-import CarouselWithCards from './CarouselWithCards'
-import Modal from './Modal';
+import CarouselWithCards from '../components/CarouselWithCards'
+import Modal from '../components/Modal';
 import { UserContext } from '../context/UserContext';
 
 export default function Home() {

@@ -575,7 +575,7 @@ export default function GradeHistory() {
                     <h5 className="card-title">Vellore Institute of Technology (VIT), India - Effective Grades</h5>
                     <h6 className="card-subtitle mb-2 text-dark-emphasis">Spotlight: Discover the latest achievements, events, and stories shaping our community at VTOP.</h6>
                     <div className="card-text mt-3 card-scroll-x">
-                        <table className="custom-table">
+                        <table className="custom-table ">
                             <tbody>
                                 <table className="custom-table" cellPadding="10">
                                     <tr>

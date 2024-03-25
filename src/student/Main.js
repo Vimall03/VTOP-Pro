@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import Sidebar from './Sidebar';
-import Home from './Home';
-import LandingPage from './LandingPage';
-import Dashboard from './Dashboard';
-import GradeHistory from './GradeHistory';
+import Sidebar from '../components/Sidebar';
+import Home from '../student/Home';
+import Dashboard from '../student/Dashboard';
+import GradeHistory from '../student/GradeHistory';
 
 export default function Main() {
     const [menu, setMenu] = useState('Home');

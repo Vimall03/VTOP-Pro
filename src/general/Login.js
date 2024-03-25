@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import logoLight from '../Assets/Vitlogo.png'
 import logoDark from '../Assets/Vitlogo2.png'
 import { useNavigate } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 import { UserContext } from '../context/UserContext';
 export default function Login(props) {
 

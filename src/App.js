@@ -1,10 +1,10 @@
 import './App.css';
 import { UserProvider } from './context/UserContext';
-import Login from './components/Login';
-import LandingPage from './components/LandingPage';
+import Login from './general/Login';
+import LandingPage from './general/LandingPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import Main from './components/Main';
+import Main from './student/Main';
 
 
 
