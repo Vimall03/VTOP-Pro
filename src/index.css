@@ -122,6 +122,26 @@ tr td {
   background-color: #e4e4e4;
   border-radius: 100px;
 }
+
+.card-scroll-x {
+  
+  overflow-x: auto;
+}
+.card-scroll-x::-webkit-scrollbar {
+  height: 4px;
+}
+
+.card-scroll-x::-webkit-scrollbar-track {
+  background-color: #343541;
+  border-radius: 100px;
+}
+
+.card-scroll-x::-webkit-scrollbar-thumb {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+
 .sidebar-shadow {
   box-shadow: 0 0px 100px 0 rgba(80, 39, 129, 1);
 }
@@ -294,4 +314,15 @@ tr td {
   font-family: "Fira Sans", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+.custom-table th, .custom-table td {
+  padding: 10px; /* Adjust the padding value as needed */
+  font-weight: bolder;
+}
+.custom-table th {
+  padding: 5px 15px; /* Different padding for headers */
+}
+
+.custom-table td {
+  padding: 10px;
 }

@@ -5,8 +5,14 @@ import CGPA from './Graphs/CGPA'
 // import Attendance
 
 export default function Dashboard() {
+
+  
+
+
+
+
     return (
-        <div className="container   " >
+        <div className="container " >
             <div className="row mt-0 ">
                 <h1 className='text-white p-3 fs-2 fw-bold'>Dashboard</h1>
                 <div className="col-md-8 p-3 pt-0 ">
@@ -52,9 +58,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             </div>
-            <div>
-            <h1 className='text-white p-3 fs-2 fw-bold'>Grade Histry</h1>
-            </div>
+            
         </div>
     )
 }

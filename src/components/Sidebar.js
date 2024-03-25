@@ -84,6 +84,17 @@ export default function Sidebar(props) {
                                 Dashboard
                             </a>
                         </li>
+                        <li>
+                            <a
+                                onClick={() => handleClick('Grade History')}
+                                className={`nav-link text-white ${activeStatus === 'Grade History' ? 'active' : ''}`}
+                            >
+                                <svg className="bi pe-none me-2" width={16} height={16}>
+                                    <use xlinkHref="#speedometer2" />
+                                </svg>
+                                Grade History
+                            </a>
+                        </li>
                         {/* Add other menu items */}
                     </ul>
 

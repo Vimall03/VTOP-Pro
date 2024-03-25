@@ -25,7 +25,6 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path='/testroute' element={<LineChart />} />
           <Route path='/' element={<LandingPage setLoginType={setLoginType} />} />
 
           <Route path='/Login' element={<Login loginType={loginType} />} />
